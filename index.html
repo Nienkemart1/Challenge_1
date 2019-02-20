@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title> Challenge 1 </title>
+		<link rel="stylesheet" type="text/css" href="challenge1.css">
+		<link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+		<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js">
+	 	</script>
+		<script type="text/javascript" src="challenge1.js"></script>
+		<script type="text/javascript" src="https://code.highcharts.com/highcharts.js"></script>
+		<script type="text/javascript" src="https://code.highcharts.com/highcharts-more.js"></script>
+		<script type="text/javascript" src="https://code.highcharts.com/modules/exporting.js"></script>
+	</head>
+	<body>
+		<div id='stars'></div>
+		<div id='stars2'></div>
+		<h1> Dashboard </h1>
+		<div class="snelheid">
+			<h2 id="titel1"> Speed</h2>
+			<div id="donutchart"></div>
+			<div id="donkergroen" class="niveau"></div> 
+			<div id="groen" class="niveau"></div>
+			<div id="geel" class="niveau"></div>
+			<div id="oranje" class="niveau"></div>
+			<div id="rood" class="niveau"></div> 
+			<div id="metertext"> 
+				<p id="low"> Low </p>
+				<p id="high"> High</p> 
+			</div>
+			<ul> 
+				<li id="tien"> 10K </li>
+				<li id="twintig"> 20K </li>
+				<li id="dertig"> 30K </li>
+				<li id="veertig"> 40K </li>
+				<li id="eenheid"> km/h </li>
+			</ul>
+			<svg id="pijl" data-name="snelheidsmeter" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 470.58 383.68">
+				<defs>
+					<style>
+						.cls-1{fill:#010101;}
+					</style>
+				</defs>
+				<title>snelheidsmeterpijl</title>
+				<path class="cls-1" d="M94.67,165.08,565.25,404.19A690.34,690.34,0,0,0,457.17,548.77Z" transform="translate(-94.67 -165.08)" />
+			</svg>
+		</div>
+		<div class="eten"> 
+			<h2> Food </h2>
+			<div id="piechart"></div>
+			<div id="legenda">
+				<div id="bread" class="producten"> </div> 
+				<div id="fruits" class="producten"></div> 
+				<div id="nuts" class="producten"></div> 
+				<div id="rechts">
+					<div id="veggies" class="producten"></div> 
+					<div id="cookies" class="producten"></div> 
+				</div>
+				<ul id="legendatext"> 
+					<li> Bread</li>
+					<li> Fruits</li>
+					<li> Nuts</li>
+					<div id="rechts2">
+						<li id="broodje2"> Veggies</li>
+						<li id="repen2"> Cookies</li>
+					</div>
+				</ul>
+			</div>
+		</div>
+		<div class="afstand"> 
+			<h2> Distance </h2>
+			<div id="curve_chart"></div>
+		</div>
+	</body>
+</html>
